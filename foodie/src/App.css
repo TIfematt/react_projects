@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Marck+Script&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.NavBar{
+    max-height: 10vh;
+}
+.logo {
+    color: #E29A3D;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.link {
+    color: white;
+    text-decoration: none;
+    padding-inline: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navlink {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 300px;
+    
+}
+.link:hover{
+    border-bottom: 2px solid #E29A3D;
+    text-decoration: none;
+    color: white;
+}
+.navicons {
+    display: flex;
+}
+.navicons > * {
+    padding: 20px;
+    margin-top: 20px;
+}
+.navicons .icon {
+    font-size: 1.3rem;
+}
+.navicons p {
+    color: white;
+}
+.phone, .signin {
+    color: #E29A3D;
+}
+.icon-word {
+    display: flex;
+    gap: 10px;
+}
+.signin-btn:hover {
+    cursor: pointer;
+    color: #E29A3D;
+    
+}
+.search:hover{
+    color: #E29A3D;
+    cursor: pointer;
+    
+}
+.cart:hover{
+    color: #E29A3D;
+    cursor: pointer;
+}
+
+/* Styling first hero banner */
+.hero-1 {
+    background-image: url('./images/burger.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 300px;
+    
+    /* padding-top: 7rem; */
+}
+.hero-1 > h2, p {
+    color: white;
+}
+.hero-1 h2 {
+    font-size: 4rem;
+    font-family: 'Andika', sans-serif;
+    font-style: bold;
+    font-weight: 600;
+}
+.hero-1 p {
+    font-weight: bold;
+}
+.hero-1 form input {
+    width: 500px;
+    height: 70px;
+    border-radius: 30px;
+    padding: 30px;
+    border: #E29A3D;
+}
+.hero-1 form button {
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    /* padding: 30px; */
+    margin-left: -160px;
+    color: white;
+    background-color: #E29A3D;
+    font-weight: bold;
+    border-style: none;
+}
+
+/* designing home page order card instruction */
+.order-card {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+    gap: 30px;
+}
+.card-design {
+    background-color: #22262F;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: black 20px;
+    padding: 30px;
+}
+.card-design h4, .icon {
+    color: #E29A3D;
+    font-size: .7rem;
+}
+.card-design h3 {
+    font-size: .9rem;
+    color: white;
+    font-weight: bold;
+}
+.below-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 30px;
+}
+.below-card p:first-child {
+    color: #E29A3D;
+    font-family: 'Marck Script', cursive;
+    font-size: 1.8rem;
+}
+.below-card p:last-child {
+    color: black;
+    max-width: 450px;
+    padding-left: 50px;
+    font-weight: bold;
+   
+}
+.below-card p:last-child > span {
+    padding-left: 50px;
+}
+.below-card h3 {
+    font-family: 'Andika', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: -50px;
+}
+
+/* styling card */
+.restaurant-card, .restaurant-card2 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.restaurant-card .card {
+    width: 400px;
+    height: 300px;
+    
+}
+.restaurant-card .card .card-icon {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    padding-top: 20px;
+}
+.restaurant-card .card .card-icon .icon1 {
+    color: #E29A3D;
+    background-color: white;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 50px;
+    min-height: 30px;
+    padding-left: 10px;
+    font-size: .75rem;
+    padding-top: 5px;
+    
+}
+.restaurant-card .card h3 {
+    display: flex;
+    width: 100px;
+    padding: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-style: none;
+    background-color: #E29A3D;
+    color: white;
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.restaurant-card .card  h2 {
+    padding-left: 40px;
+    font-family: 'Andika', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+}
+.restaurant-card .card1 {
+    background-image: url(./images/goulash-soup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.restaurant-card .card2 {
+    background-image: url(./images/sushi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.restaurant-card2 .card {
+    /* width: 400px; */
+    height: 300px;
+    
+}
+.restaurant-card2 .card .card-icon {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    padding-top: 20px;
+}
+.restaurant-card2 .card .card-icon .icon1 {
+    color: #E29A3D;
+    background-color: white;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 50px;
+    min-height: 30px;
+    padding-left: 10px;
+    font-size: .75rem;
+    padding-top: 5px;
+    
+}
+.restaurant-card2 .card h3 {
+    display: flex;
+    width: 100px;
+    padding: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-style: none;
+    background-color: #E29A3D;
+    color: white;
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.restaurant-card2 .card  h2 {
+    padding-left: 40px;
+    font-family: 'Andika', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+}
+.restaurant-card2 .card3 {
+    background-image: url(./images/brownie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+}
+.restaurant-card2 .card4 {
+    background-image: url(./images/beers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+}
+.home .view {
+    display: flex;
+    justify-content: center;
+}
+.home .view-all-btn {
+    margin-top: 40px;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: #E29A3D;
+    border-style: none;
+}
+.home .view-all-btn:hover {
+    background-color: black;
+    border-color: #E29A3D;
+    border-style: solid;
+    transition-duration: 250ms;
+}
+
+.why-people {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.why-people h4 {
+    color: #E29A3D;
+    font-family: 'Marck Script', cursive;
+    font-weight: bold;
+}
+.why-people h2 {
+    font-size: 3rem;
+    font-family: 'Andika', sans-serif;
+    font-weight: 600;
+}
+.why-people p {
+    color: black;
+    max-width: 400px;
+    padding-top: 20px;
+}
+.why-people p span {
+    position: relative;
+    padding-left: 100px;
+}
+.why-people .div-choose-us {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.why-people .div-choose-us .choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.why-people .div-choose-us .choose-us .choose-us-icon {
+    font-size: 4rem;
+    color: #E29A3D;
+}
+.why-people .div-choose-us .choose-us h3 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.why-people .div-choose-us .choose-us p {
+    font-size: .75rem;
+    margin-top: -20px;
+}
+
+/* styling order banner */
+.banner1 {
+    display: flex;
+    max-height: 80vh;
+    /* gap: 100px; */
+    min-width: 96vw;
+    background-color: #22262F;
+    align-items: center;
+    justify-content: center;
+}
+.banner1 .order-banner {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 100px; */
+    margin-top: 60px;
+    margin-left: 439px;
+}
+.banner1 .order-banner h2 {
+    color: white;
+    position: relative;
+    max-width: 400px;
+    font-size: 3rem;
+    font-family: 'Andika', sans-serif;
+    font-weight: 600;
+}
+.banner1 .order-banner h2 span {
+    color: #E29A3D;
+}
+.banner1 .order-banner > p {
+    color: white;
+}
+.banner1 .order-banner #p-1 {
+    font-weight: bold;
+}
+.banner1 .order-banner #p-2 {
+    color: rgb(186, 183, 183);
+    font-size: .75rem;
+    max-width: 300px;
+}
+.banner1 .order-banner button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #E29A3D;
+    border-style: none;
+    font-weight: bold;
+}
+.banner1 .order-banner button:hover {
+    background-color: black;
+    border-color: #E29A3D;
+    border-style: solid;
+    transition-duration: 250ms;
+}
+.home-banner1 {
+    margin-top: 80px;
+}
+.banner1 .banner-img img {
+    width: 1000px;
+    height: 700px;
+    margin-left: 50px;
+}
+.customer-feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+
+}
+.customer-feedback .arrow {
+    font-size: 3rem;
+    color: #E29A3D;
+    margin: 200px 100px 50px ;
+    
+    
+
+}
+.customer-feedback .testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.customer-feedback .testimony p:first-child {
+    color: #E29A3D;
+    font-family: 'Marck Script', cursive;
+    
+}
+.customer-feedback .testimony .tes-header {
+    font-size: 2rem;
+    font-family: 'Andika', sans-serif;
+    font-weight: 600;
+    /* margin-left: 60px; */
+}
+.customer-feedback .testimony .tes-word {
+    color: rgb(186, 183, 183);
+    font-size: .75rem;
+    max-width: 350px;
+    text-align: center;
+    margin-top: 80px;
+}
+.customer-feedback .testimony p:last-child{
+    color: rgb(186, 183, 183);
+    font-size: .75rem;
+}
+.customer-feedback  .right-arrow {
+    color: rgb(186, 183, 183);
+}
